@@ -7,7 +7,7 @@ var recipes = [
     category: "Seafood",
     rating: 4.9,
     reviews: 187,
-    prepTime: "10 min",
+    prepTime: "10",
     cookTime: "15 min",
     servings: "2 people",
     ingredients: [
@@ -49,7 +49,7 @@ var recipes = [
     category: "Pasta",
     rating: 4.8,
     reviews: 245,
-    prepTime: "15 min",
+    prepTime: "30",
     cookTime: "20 min",
     servings: "4 people",
     ingredients: [
@@ -91,7 +91,7 @@ var recipes = [
     category: "Mexican",
     rating: 4.7,
     reviews: 198,
-    prepTime: "15 min",
+    prepTime: "15",
     cookTime: "15 min",
     servings: "4 people",
     ingredients: [
@@ -133,7 +133,7 @@ var recipes = [
     category: "Italian",
     rating: 4.9,
     reviews: 320,
-    prepTime: "20 min",
+    prepTime: "20",
     cookTime: "15 min",
     servings: "4 people",
     ingredients: [
@@ -175,7 +175,7 @@ var recipes = [
     category: "Salad",
     rating: 4.6,
     reviews: 142,
-    prepTime: "15 min",
+    prepTime: "60",
     cookTime: "10 min",
     servings: "2 people",
     ingredients: [
@@ -217,7 +217,7 @@ var recipes = [
     category: "Vegetarian",
     rating: 4.8,
     reviews: 173,
-    prepTime: "10 min",
+    prepTime: "10",
     cookTime: "12 min",
     servings: "3 people",
     ingredients: [
@@ -259,7 +259,7 @@ var recipes = [
     category: "American",
     rating: 4.9,
     reviews: 410,
-    prepTime: "15 min",
+    prepTime: "15",
     cookTime: "15 min",
     servings: "4 people",
     ingredients: [
@@ -301,7 +301,7 @@ var recipes = [
     category: "Italian",
     rating: 4.8,
     reviews: 121,
-    prepTime: "15 min",
+    prepTime: "55 ",
     cookTime: "35 min",
     servings: "4 people",
     ingredients: [
@@ -344,7 +344,7 @@ var recipes = [
     category: "Dessert",
     rating: 5.0,
     reviews: 515,
-    prepTime: "15 min",
+    prepTime: "90 ",
     cookTime: "30 min",
     servings: "9 pieces",
     ingredients: [
@@ -386,7 +386,7 @@ var recipes = [
     category: "Breakfast",
     rating: 4.9,
     reviews: 286,
-    prepTime: "10 min",
+    prepTime: "50 ",
     cookTime: "15 min",
     servings: "4 people",
     ingredients: [
@@ -434,7 +434,7 @@ function displayRecipe() {
     document.getElementById("category").innerHTML = recipe.category;
     document.getElementById("rating").innerHTML = recipe.rating;
     document.getElementById("reviews").innerHTML = "(" + recipe.reviews + " reviews)";
-    document.getElementById("prepTime").innerHTML = recipe.prepTime;
+    document.getElementById("prepTime").innerHTML = recipe.prepTime + " min";
     document.getElementById("cookTime").innerHTML = recipe.cookTime;
     document.getElementById("servings").innerHTML = recipe.servings;
 
@@ -475,6 +475,7 @@ function displayRecipe() {
     document.getElementById("fiber").innerHTML = recipe.nutrition.fiber;
     document.getElementById("sodium").innerHTML = recipe.nutrition.sodium;
 
+
     var tipsHTML = "";
 
     for (var i = 0; i < recipe.tips.length; i++) {
@@ -491,6 +492,30 @@ function displayRecipe() {
 
     document.getElementById("tips").innerHTML = tipsHTML;
 
+    var warningCardInput = `<div class="tip-card tip-card-spec mb-3">
+                   <div>
+                    <i class="fa-solid fa-warning text-danger"></i>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <h5 class="tip-text fw-bold text-danger">
+                      Extended Preparation Time
+                    </h5>
+                    <p class="tip-text m-0">
+                      This recipe requires more than 45 minutes to prepare. Plan
+                      accordingly!
+                    </p>
+                  </div>
+                </div>`;
+
+                var prepTimeCon = Number(recipe.prepTime)
+    if (prepTimeCon > 45) {
+
+        document.getElementById("warningCard").innerHTML = warningCardInput;
+    }
+    else {
+        return;
+    }
 
 }
 displayRecipe();
+

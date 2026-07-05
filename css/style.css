@@ -90,6 +90,7 @@ html {
   width: 100%;
   height: 100%;
   min-height: 500px;
+  aspect-ratio: 4/5;
 }
 
 .recipe-image {
@@ -289,8 +290,8 @@ html {
 
 .ingredients-list,
 .instructions-list {
-  max-height: none;
-  overflow: visible;
+  max-height: 350px;
+  overflow-y: scroll;
 }
 
 .nutrition-value {
@@ -330,7 +331,7 @@ html {
   border-radius: 15px;
 
   gap: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   background-color: #fffbeb;
   border-left: 4px solid #fbbf24;
 }
@@ -391,7 +392,7 @@ html {
 
 .btn-try-recipe:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(249, 115, 22, 0.4);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.363);
 }
 
 .btn-try-recipe:active {

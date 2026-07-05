@@ -296,7 +296,7 @@ var recipes = [
   {
     title: "Mushroom Risotto",
     description: "Creamy Italian rice with mushrooms and Parmesan.",
-    image: "images/risotto.jpg",
+    image: "images/alfredo.jpg",
     difficulty: "Hard",
     category: "Italian",
     rating: 4.8,
@@ -421,9 +421,76 @@ var recipes = [
   }
 ];
 
-// var ingredientsList = recipes[Math.floor(Math.random()*recipes.length)].ingredients.map(function(ingredient, index) {
-//     return `<li class="ingredient-item"><span class="ingredient-num">`+ (index + 1) +`</span><span>` + ingredient + `</span></li>`;
-// })
-// console.log(ingredientsList.join(""));
+
+function displayRecipe() {
+
+    var randomIndex = Math.floor(Math.random() * recipes.length);
+
+    var recipe = recipes[randomIndex];
+
+    document.getElementById("recipeTitle").innerHTML = recipe.title;
+    document.getElementById("description").innerHTML = recipe.description;
+    document.getElementById("difficulty").innerHTML = recipe.difficulty;
+    document.getElementById("category").innerHTML = recipe.category;
+    document.getElementById("rating").innerHTML = recipe.rating;
+    document.getElementById("reviews").innerHTML = "(" + recipe.reviews + " reviews)";
+    document.getElementById("prepTime").innerHTML = recipe.prepTime;
+    document.getElementById("cookTime").innerHTML = recipe.cookTime;
+    document.getElementById("servings").innerHTML = recipe.servings;
+
+    document.getElementById("recipeImg").src = recipe.image;
+
+    // Ingredients
+    var ingredientsHTML = "";
+
+    for (var i = 0; i < recipe.ingredients.length; i++) {
+
+        ingredientsHTML +=
+        `
+        <div class="ingredient-item">
+            <span class="ingredient-num">${i + 1}</span>
+            <span>${recipe.ingredients[i]}</span>
+        </div>
+        `;
+
+    }
+
+    document.getElementById("recipeIngredients").innerHTML = ingredientsHTML;
 
 
+    var instructionsHTML = "";
+
+    for (var i = 0; i < recipe.instructions.length; i++) {
+
+        instructionsHTML += `<div class="instruction-step"> <span class="step-num">${i + 1}</span><span class="step-text">${recipe.instructions[i]}</span></div>`;
+    }
+
+    document.getElementById("instructions").innerHTML = instructionsHTML;
+
+
+    document.getElementById("calories").innerHTML = recipe.nutrition.calories;
+    document.getElementById("protein").innerHTML = recipe.nutrition.protein;
+    document.getElementById("carbs").innerHTML = recipe.nutrition.carbs;
+    document.getElementById("fat").innerHTML = recipe.nutrition.fat;
+    document.getElementById("fiber").innerHTML = recipe.nutrition.fiber;
+    document.getElementById("sodium").innerHTML = recipe.nutrition.sodium;
+
+    var tipsHTML = "";
+
+    for (var i = 0; i < recipe.tips.length; i++) {
+
+        tipsHTML +=
+        `
+        <div class="tip-card">
+            <i class="fa-solid fa-lightbulb text-warning"></i>
+            <p class="m-0">${recipe.tips[i]}</p>
+        </div>
+        `;
+
+    }
+
+    document.getElementById("tips").innerHTML = tipsHTML;
+
+
+}
+displayRecipe();

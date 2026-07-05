@@ -259,7 +259,7 @@ html {
 
 .instruction-step {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
   padding: 10px 0;
 }
@@ -489,4 +489,15 @@ html {
   .card-title {
     font-size: 22px;
   }
+  .step-num{
+    width: 0;
+    height: 40px;
+  }
+  .tip-card.tip-card-spec h5{
+    font-size: 17px;
+  }
+  .tip-card.tip-card-spec p{
+    font-size: 13px;
+  }
+
 }

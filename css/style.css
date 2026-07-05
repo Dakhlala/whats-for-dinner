@@ -440,8 +440,6 @@ html {
     font-size: 14px;
     padding: 8px 10px;
   }
-
-
 }
 
 @media (max-width: 575px) {
@@ -485,15 +483,14 @@ html {
   .card-title {
     font-size: 22px;
   }
-  .step-num{
+  .step-num {
     width: 0;
     height: 40px;
   }
-  .tip-card.tip-card-spec h5{
+  .tip-card.tip-card-spec h5 {
     font-size: 17px;
   }
-  .tip-card.tip-card-spec p{
+  .tip-card.tip-card-spec p {
     font-size: 13px;
   }
-
 }

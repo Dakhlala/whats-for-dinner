@@ -1,7 +1,8 @@
 var recipes = [
   {
     title: "Honey Garlic Salmon",
-    description: "Pan-seared salmon with a sweet and savory honey garlic glaze.",
+    description:
+      "Pan-seared salmon with a sweet and savory honey garlic glaze.",
     image: "images/salmon.jpg",
     difficulty: "Easy",
     category: "Seafood",
@@ -17,14 +18,14 @@ var recipes = [
       "4 cloves garlic, minced",
       "1 tablespoon grated fresh ginger",
       "2 tablespoons olive oil",
-      "Salt and pepper to taste"
+      "Salt and pepper to taste",
     ],
     instructions: [
       "Season salmon with salt and pepper.",
       "Mix honey, soy sauce, garlic, and ginger.",
       "Heat olive oil in a skillet.",
       "Cook salmon for 4 minutes per side.",
-      "Pour sauce over salmon and simmer for 2 minutes."
+      "Pour sauce over salmon and simmer for 2 minutes.",
     ],
     nutrition: {
       calories: "380 kcal",
@@ -32,13 +33,13 @@ var recipes = [
       carbs: "18g",
       fat: "20g",
       fiber: "0g",
-      sodium: "720mg"
+      sodium: "720mg",
     },
     tips: [
       "Don't overcook the salmon.",
       "Use fresh garlic for the best flavor.",
-      "Serve with steamed vegetables."
-    ]
+      "Serve with steamed vegetables.",
+    ],
   },
 
   {
@@ -59,14 +60,14 @@ var recipes = [
       "1 cup Parmesan cheese",
       "3 cloves garlic",
       "2 tablespoons butter",
-      "Salt and pepper"
+      "Salt and pepper",
     ],
     instructions: [
       "Cook pasta until al dente.",
       "Grill chicken and slice.",
       "Cook garlic in butter.",
       "Add cream and Parmesan.",
-      "Mix pasta with sauce and top with chicken."
+      "Mix pasta with sauce and top with chicken.",
     ],
     nutrition: {
       calories: "650 kcal",
@@ -74,13 +75,13 @@ var recipes = [
       carbs: "45g",
       fat: "34g",
       fiber: "3g",
-      sodium: "810mg"
+      sodium: "810mg",
     },
     tips: [
       "Reserve pasta water for a silkier sauce.",
       "Use freshly grated Parmesan.",
-      "Serve immediately."
-    ]
+      "Serve immediately.",
+    ],
   },
 
   {
@@ -101,14 +102,14 @@ var recipes = [
       "2 tomatoes, diced",
       "Shredded lettuce",
       "Cheddar cheese",
-      "Taco seasoning"
+      "Taco seasoning",
     ],
     instructions: [
       "Cook beef with onion.",
       "Add taco seasoning.",
       "Warm taco shells.",
       "Fill shells with beef.",
-      "Top with lettuce, tomatoes, and cheese."
+      "Top with lettuce, tomatoes, and cheese.",
     ],
     nutrition: {
       calories: "520 kcal",
@@ -116,13 +117,13 @@ var recipes = [
       carbs: "30g",
       fat: "31g",
       fiber: "5g",
-      sodium: "890mg"
+      sodium: "890mg",
     },
     tips: [
       "Warm taco shells before serving.",
       "Add avocado for extra creaminess.",
-      "Serve with salsa."
-    ]
+      "Serve with salsa.",
+    ],
   },
 
   {
@@ -143,14 +144,14 @@ var recipes = [
       "Fresh basil leaves",
       "2 tablespoons olive oil",
       "Salt",
-      "Black pepper"
+      "Black pepper",
     ],
     instructions: [
       "Roll out the dough.",
       "Spread tomato sauce.",
       "Add mozzarella.",
       "Bake at 220°C for 15 minutes.",
-      "Top with basil and olive oil."
+      "Top with basil and olive oil.",
     ],
     nutrition: {
       calories: "480 kcal",
@@ -158,13 +159,13 @@ var recipes = [
       carbs: "52g",
       fat: "18g",
       fiber: "3g",
-      sodium: "640mg"
+      sodium: "640mg",
     },
     tips: [
       "Use fresh mozzarella.",
       "Preheat your oven well.",
-      "Add basil after baking."
-    ]
+      "Add basil after baking.",
+    ],
   },
 
   {
@@ -185,14 +186,14 @@ var recipes = [
       "Parmesan cheese",
       "Caesar dressing",
       "Olive oil",
-      "Black pepper"
+      "Black pepper",
     ],
     instructions: [
       "Grill the chicken.",
       "Chop lettuce.",
       "Mix lettuce with dressing.",
       "Add chicken and croutons.",
-      "Top with Parmesan."
+      "Top with Parmesan.",
     ],
     nutrition: {
       calories: "390 kcal",
@@ -200,13 +201,13 @@ var recipes = [
       carbs: "12g",
       fat: "22g",
       fiber: "4g",
-      sodium: "610mg"
+      sodium: "610mg",
     },
     tips: [
       "Use chilled lettuce.",
       "Add dressing just before serving.",
-      "Fresh Parmesan tastes best."
-    ]
+      "Fresh Parmesan tastes best.",
+    ],
   },
 
   {
@@ -227,14 +228,14 @@ var recipes = [
       "Snap peas",
       "Soy sauce",
       "Sesame oil",
-      "Garlic"
+      "Garlic",
     ],
     instructions: [
       "Heat sesame oil.",
       "Cook garlic.",
       "Add vegetables.",
       "Stir in soy sauce.",
-      "Serve over rice."
+      "Serve over rice.",
     ],
     nutrition: {
       calories: "240 kcal",
@@ -242,13 +243,13 @@ var recipes = [
       carbs: "28g",
       fat: "9g",
       fiber: "7g",
-      sodium: "560mg"
+      sodium: "560mg",
     },
     tips: [
       "Cook over high heat.",
       "Keep vegetables slightly crunchy.",
-      "Add sesame seeds."
-    ]
+      "Add sesame seeds.",
+    ],
   },
 
   {
@@ -269,14 +270,14 @@ var recipes = [
       "BBQ sauce",
       "Lettuce",
       "Tomato",
-      "Onion"
+      "Onion",
     ],
     instructions: [
       "Shape burger patties.",
       "Grill until cooked.",
       "Toast buns.",
       "Assemble burger.",
-      "Serve with fries."
+      "Serve with fries.",
     ],
     nutrition: {
       calories: "710 kcal",
@@ -284,13 +285,13 @@ var recipes = [
       carbs: "42g",
       fat: "43g",
       fiber: "3g",
-      sodium: "980mg"
+      sodium: "980mg",
     },
     tips: [
       "Don't press burgers while grilling.",
       "Toast the buns.",
-      "Rest burgers for 2 minutes."
-    ]
+      "Rest burgers for 2 minutes.",
+    ],
   },
 
   {
@@ -311,14 +312,14 @@ var recipes = [
       "4 cups vegetable broth",
       "Parmesan cheese",
       "Butter",
-      "White wine"
+      "White wine",
     ],
     instructions: [
       "Cook onions.",
       "Add mushrooms.",
       "Toast rice.",
       "Add broth gradually.",
-      "Finish with butter and Parmesan."
+      "Finish with butter and Parmesan.",
     ],
     nutrition: {
       calories: "470 kcal",
@@ -326,17 +327,12 @@ var recipes = [
       carbs: "58g",
       fat: "18g",
       fiber: "4g",
-      sodium: "540mg"
+      sodium: "540mg",
     },
-    tips: [
-      "Add broth gradually.",
-      "Stir frequently.",
-      "Serve immediately."
-    ]
+    tips: ["Add broth gradually.", "Stir frequently.", "Serve immediately."],
   },
 
   {
-
     title: "Chocolate Brownies",
     description: "Fudgy homemade chocolate brownies.",
     image: "images/brownies.jpg",
@@ -354,14 +350,14 @@ var recipes = [
       "1 cup sugar",
       "1 cup flour",
       "Cocoa powder",
-      "Vanilla extract"
+      "Vanilla extract",
     ],
     instructions: [
       "Melt chocolate and butter.",
       "Mix eggs and sugar.",
       "Combine ingredients.",
       "Bake for 30 minutes.",
-      "Cool before slicing."
+      "Cool before slicing.",
     ],
     nutrition: {
       calories: "310 kcal",
@@ -369,13 +365,13 @@ var recipes = [
       carbs: "36g",
       fat: "17g",
       fiber: "2g",
-      sodium: "120mg"
+      sodium: "120mg",
     },
     tips: [
       "Don't overbake.",
       "Cool completely before cutting.",
-      "Add walnuts if desired."
-    ]
+      "Add walnuts if desired.",
+    ],
   },
 
   {
@@ -396,14 +392,14 @@ var recipes = [
       "1½ cups milk",
       "2 tablespoons sugar",
       "1 cup blueberries",
-      "Butter"
+      "Butter",
     ],
     instructions: [
       "Mix dry ingredients.",
       "Whisk wet ingredients.",
       "Combine batter gently.",
       "Fold in blueberries.",
-      "Cook on a greased skillet until golden."
+      "Cook on a greased skillet until golden.",
     ],
     nutrition: {
       calories: "340 kcal",
@@ -411,88 +407,77 @@ var recipes = [
       carbs: "50g",
       fat: "11g",
       fiber: "3g",
-      sodium: "390mg"
+      sodium: "390mg",
     },
     tips: [
       "Don't overmix the batter.",
       "Use fresh blueberries.",
-      "Serve with maple syrup."
-    ]
-  }
+      "Serve with maple syrup.",
+    ],
+  },
 ];
 
-
 function displayRecipe() {
+  var randomIndex = Math.floor(Math.random() * recipes.length);
 
-    var randomIndex = Math.floor(Math.random() * recipes.length);
+  var recipe = recipes[randomIndex];
 
-    var recipe = recipes[randomIndex];
+  document.getElementById("recipeTitle").innerHTML = recipe.title;
+  document.getElementById("description").innerHTML = recipe.description;
+  document.getElementById("difficulty").innerHTML = recipe.difficulty;
+  document.getElementById("category").innerHTML = recipe.category;
+  document.getElementById("rating").innerHTML = recipe.rating;
+  document.getElementById("reviews").innerHTML =
+    "(" + recipe.reviews + " reviews)";
+  document.getElementById("prepTime").innerHTML = recipe.prepTime + " min";
+  document.getElementById("cookTime").innerHTML = recipe.cookTime;
+  document.getElementById("servings").innerHTML = recipe.servings;
 
-    document.getElementById("recipeTitle").innerHTML = recipe.title;
-    document.getElementById("description").innerHTML = recipe.description;
-    document.getElementById("difficulty").innerHTML = recipe.difficulty;
-    document.getElementById("category").innerHTML = recipe.category;
-    document.getElementById("rating").innerHTML = recipe.rating;
-    document.getElementById("reviews").innerHTML = "(" + recipe.reviews + " reviews)";
-    document.getElementById("prepTime").innerHTML = recipe.prepTime + " min";
-    document.getElementById("cookTime").innerHTML = recipe.cookTime;
-    document.getElementById("servings").innerHTML = recipe.servings;
+  document.getElementById("recipeImg").src = recipe.image;
 
-    document.getElementById("recipeImg").src = recipe.image;
+  // Ingredients
+  var ingredientsHTML = "";
 
-    // Ingredients
-    var ingredientsHTML = "";
-
-    for (var i = 0; i < recipe.ingredients.length; i++) {
-
-        ingredientsHTML +=
-        `
+  for (var i = 0; i < recipe.ingredients.length; i++) {
+    ingredientsHTML += `
         <div class="ingredient-item">
             <span class="ingredient-num">${i + 1}</span>
             <span>${recipe.ingredients[i]}</span>
         </div>
         `;
+  }
 
-    }
+  document.getElementById("recipeIngredients").innerHTML = ingredientsHTML;
 
-    document.getElementById("recipeIngredients").innerHTML = ingredientsHTML;
+  var instructionsHTML = "";
 
+  for (var i = 0; i < recipe.instructions.length; i++) {
+    instructionsHTML += `<div class="instruction-step"> <span class="step-num">${i + 1}</span><span class="step-text">${recipe.instructions[i]}</span></div>`;
+  }
 
-    var instructionsHTML = "";
+  document.getElementById("instructions").innerHTML = instructionsHTML;
 
-    for (var i = 0; i < recipe.instructions.length; i++) {
+  document.getElementById("calories").innerHTML = recipe.nutrition.calories;
+  document.getElementById("protein").innerHTML = recipe.nutrition.protein;
+  document.getElementById("carbs").innerHTML = recipe.nutrition.carbs;
+  document.getElementById("fat").innerHTML = recipe.nutrition.fat;
+  document.getElementById("fiber").innerHTML = recipe.nutrition.fiber;
+  document.getElementById("sodium").innerHTML = recipe.nutrition.sodium;
 
-        instructionsHTML += `<div class="instruction-step"> <span class="step-num">${i + 1}</span><span class="step-text">${recipe.instructions[i]}</span></div>`;
-    }
+  var tipsHTML = "";
 
-    document.getElementById("instructions").innerHTML = instructionsHTML;
-
-
-    document.getElementById("calories").innerHTML = recipe.nutrition.calories;
-    document.getElementById("protein").innerHTML = recipe.nutrition.protein;
-    document.getElementById("carbs").innerHTML = recipe.nutrition.carbs;
-    document.getElementById("fat").innerHTML = recipe.nutrition.fat;
-    document.getElementById("fiber").innerHTML = recipe.nutrition.fiber;
-    document.getElementById("sodium").innerHTML = recipe.nutrition.sodium;
-
-
-    var tipsHTML = "";
-
-    for (var i = 0; i < recipe.tips.length; i++) {
-
-        tipsHTML +=
-        `
+  for (var i = 0; i < recipe.tips.length; i++) {
+    tipsHTML += `
         <div class="tip-card">
             <i class="fa-solid fa-lightbulb text-warning"></i>
             <p class="m-0">${recipe.tips[i]}</p>
         </div>
         `;
+  }
 
-    }
+  document.getElementById("tips").innerHTML = tipsHTML;
 
-    document.getElementById("tips").innerHTML = tipsHTML;
-
-    var warningCardInput = `<div class="tip-card tip-card-spec mb-3">
+  var warningCardInput = `<div class="tip-card tip-card-spec mb-3">
                    <div>
                     <i class="fa-solid fa-warning text-danger"></i>
                   </div>
@@ -507,15 +492,11 @@ function displayRecipe() {
                   </div>
                 </div>`;
 
-                var prepTimeCon = Number(recipe.prepTime)
-    if (prepTimeCon > 45) {
-
-        document.getElementById("warningCard").innerHTML = warningCardInput;
-    }
-    else {
-        return;
-    }
-
+  var prepTimeCon = Number(recipe.prepTime);
+  if (prepTimeCon > 45) {
+    document.getElementById("warningCard").innerHTML = warningCardInput;
+  } else {
+    return;
+  }
 }
 displayRecipe();
-

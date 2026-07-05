@@ -93,6 +93,7 @@
               <div class="recipe-image-wrapper">
                 <img
                   src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&h=800&fit=crop"
+                  id="recipeImg"
                   alt="Honey Garlic Salmon"
                   class="recipe-image"
                 />
@@ -102,8 +103,8 @@
                     class="fa-solid fa-star text-warning me-1"
                     style="font-size: 12px"
                   ></i>
-                  <span class="fw-bold" style="font-size: 14px">4.9</span>
-                  <span class="text-secondary" style="font-size: 12px">
+                  <span class="fw-bold" style="font-size: 14px" id="rating">4.9</span>
+                  <span class="text-secondary" style="font-size: 12px" id="reviews">
                     (187 reviews)</span
                   >
                 </div>
@@ -116,8 +117,8 @@
                           class="fa-regular fa-clock stat-icon"
                           style="color: #f97316"
                         ></i>
-                        <div class="stat-label">Prep Time</div>
-                        <div class="stat-value">10 min</div>
+                        <div class="stat-label" >Prep Time</div>
+                        <div class="stat-value" id="prepTime">10 min</div>
                       </div>
                     </div>
                     <div class="col-4">
@@ -127,7 +128,7 @@
                           style="color: #ef4444"
                         ></i>
                         <div class="stat-label">Cook Time</div>
-                        <div class="stat-value">15 min</div>
+                        <div class="stat-value" id="cookTime">15 min</div>
                       </div>
                     </div>
                     <div class="col-4">
@@ -137,7 +138,7 @@
                           style="color: #3b82f6"
                         ></i>
                         <div class="stat-label">Servings</div>
-                        <div class="stat-value">2 people</div>
+                        <div class="stat-value" id="servings">2 people</div>
                       </div>
                     </div>
                   </div>
@@ -149,14 +150,14 @@
               <div class="card-body p-3 p-md-4 overflow-y-auto w-100 p-lg-5">
                 <!-- Badges -->
                 <div class="d-flex gap-2 mb-3">
-                  <span class="badge-custom badge-easy">Easy</span>
-                  <span class="badge-custom badge-seafood">Seafood</span>
+                  <span class="badge-custom badge-easy" id="difficulty">Easy</span>
+                  <span class="badge-custom badge-seafood" id="category">Seafood</span>
                 </div>
                 <!-- Title and Icons -->
                 <div
                   class="d-flex align-items-start justify-content-between mb-2"
                 >
-                  <h2 class="card-title fw-bold m-0">Honey Garlic Salmon</h2>
+                  <h2 class="card-title fw-bold m-0" id="title">Honey Garlic Salmon</h2>
                   <div class="d-flex gap-2 ms-3 flex-shrink-0">
                     <button class="icon-btn" aria-label="Bookmark recipe">
                       <i
@@ -172,7 +173,7 @@
                     </button>
                   </div>
                 </div>
-                <p class="text-secondary mb-4" style="font-size: 15px">
+                <p class="text-secondary mb-4" style="font-size: 15px" id="description">
                   Pan-seared salmon with a sweet and savory glaze
                 </p>
 
@@ -186,8 +187,7 @@
                           <h5 class="tip-text fw-bold text-danger"
                             >Extended Preparation Time</h5>
                             <p class="tip-text m-0"
-                            >Don't overcook salmon - it should be slightly pink in
-                            the center</p>
+                            >This recipe requires more than 45 minutes to prepare. Plan accordingly!</p>
 
                         </div>
                         
@@ -266,7 +266,7 @@
                     role="tabpanel"
                     aria-labelledby="ingredients-tab"
                   >
-                    <ul class="list-unstyled ingredients-list p-4">
+                    <ul class="list-unstyled ingredients-list p-4" id="ingredients">
                       <li class="ingredient-item">
                         <span class="ingredient-num">1</span>
                         <span>2 salmon fillets (6 oz each)</span>
@@ -305,7 +305,7 @@
                     role="tabpanel"
                     aria-labelledby="instructions-tab"
                   >
-                    <div class="instructions-list">
+                    <div class="instructions-list" id="instructions">
                       <div class="instruction-step">
                         <span class="step-num">1</span>
                         <span class="step-text"
@@ -352,7 +352,7 @@
                     aria-labelledby="nutrition-tab"
                   >
                     <div class="row mb-3">
-                      <div class="col-6">
+                      <div class="col-md-6 col-12 mb-3 mb-md-0">
                         <div class="nutrition-card justify-content-between p-3">
                           <div class="d-flex align-items-center gap-3">
                             <div
@@ -366,10 +366,10 @@
                             </div>
                             <span class="nutrition-label">Calories</span>
                           </div>
-                          <span class="nutrition-value">380 kcal</span>
+                          <span class="nutrition-value" id="calories">380 kcal</span>
                         </div>
                       </div>
-                      <div class="col-6">
+                      <div class="col-md-6 col-12">
                         <div class="nutrition-card justify-content-between p-3">
                           <div class="d-flex align-items-center gap-3">
                             <div
@@ -384,12 +384,12 @@
 
                             <span class="nutrition-label">Protein</span>
                           </div>
-                          <span class="nutrition-value">35g</span>
+                          <span class="nutrition-value" id="protein">35g</span>
                         </div>
                       </div>
                     </div>
                     <div class="row mb-3">
-                      <div class="col-6">
+                      <div class="col-md-6 col-12 mb-3 mb-md-0">
                         <div class="nutrition-card justify-content-between p-3">
                           <div class="d-flex align-items-center gap-3">
                             <div
@@ -404,10 +404,10 @@
 
                             <span class="nutrition-label">Carbohydrates</span>
                           </div>
-                          <span class="nutrition-value">28g</span>
+                          <span class="nutrition-value" id="carbs">28g</span>
                         </div>
                       </div>
-                      <div class="col-6">
+                      <div class="col-md-6 col-12">
                         <div class="nutrition-card justify-content-between p-3">
                           <div class="d-flex align-items-center gap-3">
                             <div
@@ -422,13 +422,13 @@
                             <span class="nutrition-label">Fat</span>
                           </div>
 
-                          <span class="nutrition-value">14g</span>
+                          <span class="nutrition-value" id="fat">14g</span>
                         </div>
                       </div>
                     </div>
 
                     <div class="row mb-3">
-                      <div class="col-6">
+                      <div class="col-md-6 col-12 mb-3 mb-md-0">
                         <div class="nutrition-card justify-content-between p-3">
                           <div class="d-flex align-items-center gap-3">
                             <div
@@ -442,10 +442,10 @@
                             </div>
                             <span class="nutrition-label">Fiber</span>
                           </div>
-                          <span class="nutrition-value">0g</span>
+                          <span class="nutrition-value" id="fiber">0g</span>
                         </div>
                       </div>
-                      <div class="col-6">
+                      <div class="col-md-6 col-12">
                         <div class="nutrition-card justify-content-between p-3">
                           <div class="d-flex align-items-center gap-3">
                             <div
@@ -459,7 +459,7 @@
                             </div>
                             <span class="nutrition-label">Sodium</span>
                           </div>
-                          <span class="nutrition-value">720mg</span>
+                          <span class="nutrition-value" id="soduim">720mg</span>
                         </div>
                       </div>
                     </div>
@@ -472,7 +472,7 @@
                     role="tabpanel"
                     aria-labelledby="tips-tab"
                   >
-                    <div class="tips-list">
+                    <div class="tips-list" id="tips">
                       <div class="tip-card">
                         <div class="tip-check">
                           <i class="fa-solid fa-check text-light"></i>
@@ -516,7 +516,7 @@
                 <div class="line bg-secondary-subtle mt-2"></div>
 
                 <div class="mt-4 pt-2">
-                  <button class="btn-try-recipe">
+                  <button class="btn-try-recipe" onclick="">
                     <i class="fa-solid fa-rotate me-1"></i>Try Another Recipe
                   </button>
                 </div>

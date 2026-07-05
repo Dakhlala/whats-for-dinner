@@ -496,7 +496,7 @@ function displayRecipe() {
   if (prepTimeCon > 45) {
     document.getElementById("warningCard").innerHTML = warningCardInput;
   } else {
-    return;
+    document.getElementById("warningCard").innerHTML = ""
   }
 }
 displayRecipe();

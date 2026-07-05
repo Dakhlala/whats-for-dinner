@@ -192,6 +192,14 @@ html {
 .recipe-tabs {
   border-bottom: 1px solid #e5e7eb;
   gap: 0;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.recipe-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .recipe-tabs .nav-item {
@@ -295,7 +303,7 @@ html {
 }
 
 .nutrition-value {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -428,25 +436,12 @@ html {
     border-radius: 24px 24px 0 0;
   }
 
-  .recipe-tabs {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-
-  .recipe-tabs::-webkit-scrollbar {
-    display: none;
-  }
-
   .recipe-tabs .nav-link {
     font-size: 14px;
     padding: 8px 10px;
   }
 
-  .recipe-tabs.gap-4 {
-    gap: 0.5rem !important;
-  }
+
 }
 
 @media (max-width: 575px) {
